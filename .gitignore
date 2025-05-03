@@ -1,0 +1,32 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+
+## VS user-specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Temporary files
+*.tmp
+*.log
+
+## Configuration
+*.DotSettings
+
+## Backup files
+*.bak
+*.old
+
+## Publish output
+publish/
+
+## Windows image cache
+Thumbs.db
+ehthumbs.db
+
+## Database files
+*.mdf
+*.ldf
