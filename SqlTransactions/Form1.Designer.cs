@@ -33,12 +33,14 @@
 			this.btnAddCustomer = new System.Windows.Forms.Button();
 			this.btnDelCustomer = new System.Windows.Forms.Button();
 			this.btnEdit = new System.Windows.Forms.Button();
+			this.btnFilter = new System.Windows.Forms.Button();
+			this.txtFilter = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// btnGetList
 			// 
-			this.btnGetList.Location = new System.Drawing.Point(607, 12);
+			this.btnGetList.Location = new System.Drawing.Point(1005, 24);
 			this.btnGetList.Name = "btnGetList";
 			this.btnGetList.Size = new System.Drawing.Size(137, 49);
 			this.btnGetList.TabIndex = 1;
@@ -58,7 +60,7 @@
 			// 
 			// btnAddCustomer
 			// 
-			this.btnAddCustomer.Location = new System.Drawing.Point(607, 67);
+			this.btnAddCustomer.Location = new System.Drawing.Point(1005, 79);
 			this.btnAddCustomer.Name = "btnAddCustomer";
 			this.btnAddCustomer.Size = new System.Drawing.Size(137, 49);
 			this.btnAddCustomer.TabIndex = 3;
@@ -68,7 +70,7 @@
 			// 
 			// btnDelCustomer
 			// 
-			this.btnDelCustomer.Location = new System.Drawing.Point(607, 122);
+			this.btnDelCustomer.Location = new System.Drawing.Point(1005, 134);
 			this.btnDelCustomer.Name = "btnDelCustomer";
 			this.btnDelCustomer.Size = new System.Drawing.Size(137, 49);
 			this.btnDelCustomer.TabIndex = 4;
@@ -78,7 +80,7 @@
 			// 
 			// btnEdit
 			// 
-			this.btnEdit.Location = new System.Drawing.Point(607, 177);
+			this.btnEdit.Location = new System.Drawing.Point(1005, 189);
 			this.btnEdit.Name = "btnEdit";
 			this.btnEdit.Size = new System.Drawing.Size(137, 49);
 			this.btnEdit.TabIndex = 5;
@@ -86,11 +88,30 @@
 			this.btnEdit.UseVisualStyleBackColor = true;
 			this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
 			// 
+			// btnFilter
+			// 
+			this.btnFilter.Location = new System.Drawing.Point(680, 171);
+			this.btnFilter.Name = "btnFilter";
+			this.btnFilter.Size = new System.Drawing.Size(107, 32);
+			this.btnFilter.TabIndex = 6;
+			this.btnFilter.Text = "FILTER";
+			this.btnFilter.UseVisualStyleBackColor = true;
+			this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
+			// 
+			// txtFilter
+			// 
+			this.txtFilter.Location = new System.Drawing.Point(626, 134);
+			this.txtFilter.Name = "txtFilter";
+			this.txtFilter.Size = new System.Drawing.Size(226, 22);
+			this.txtFilter.TabIndex = 7;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(1154, 450);
+			this.Controls.Add(this.txtFilter);
+			this.Controls.Add(this.btnFilter);
 			this.Controls.Add(this.btnEdit);
 			this.Controls.Add(this.btnDelCustomer);
 			this.Controls.Add(this.btnAddCustomer);
@@ -100,6 +121,7 @@
 			this.Text = "Form1";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -109,6 +131,8 @@
 		private System.Windows.Forms.Button btnAddCustomer;
 		private System.Windows.Forms.Button btnDelCustomer;
 		private System.Windows.Forms.Button btnEdit;
+		private System.Windows.Forms.Button btnFilter;
+		private System.Windows.Forms.TextBox txtFilter;
 	}
 }
 
